@@ -1,5 +1,5 @@
 #include <iostream>
-#include "insert_sorting.h"
+#include "ree_sort.h"
 
 #define QUICK_SORTING   1
 #define INSERT_SORTING  2
@@ -45,9 +45,9 @@ int main(int argc, char * argv[]) {
     }
     cout << endl;
 
-    int * output = ree::insert_sorting(input, count);
+    ree::insertion_sort(input, input + count);
     for (int i=0; i<count; i++) {
-        cout << output[i] << "\t";
+        cout << input[i] << "\t";
     }
     cout << endl;
 
